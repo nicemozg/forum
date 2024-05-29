@@ -1,0 +1,129 @@
+.box-post {
+    width: 460px;
+    height: 500px;
+}
+
+.inputBox-post {
+    position: relative;
+    max-width: 420px;
+    margin-top: 15px;
+}
+
+.inputBox-post textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    max-height: 120px;
+    resize: vertical; /* Разрешить изменение высоты только вертикально */
+}
+
+.inputBox-post textarea {
+    overflow-y: auto; /* Добавить вертикальную прокрутку при необходимости */
+}
+
+.inputBox-post input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.inputBox-post span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.inputBox-post input:valid ~ span,
+.inputBox-post input:focus ~ span
+{
+    color: #ffffff;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.upload-photo {
+    color: #ffffff;
+}
+
+.inputBox-post i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #00fff7;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+
+
+.inputBox-post input:valid ~ i,
+.inputBox-post input:focus ~ i
+{
+    height: 44px;
+}
+
+.links
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a
+{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.links a:hover,
+.links a:nth-child(2)
+{
+    color: #d4d4d4;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    background: #ffffff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:active
+{
+    opacity: 0.8;
+}
+
+@keyframes changeColor {
+    0% { background-color: green; }
+    50% { background-color: red; }
+    100% { background-color: green; }
+}
+
+.btn-close-form {
+    animation: changeColor 6s infinite;
+    position: absolute; top: -12px; right: 2px;
+}

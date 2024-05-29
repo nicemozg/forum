@@ -1,0 +1,23 @@
+.comment-block-list {
+    width: 625px;
+    padding: 10px;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    margin: 15px;
+    border: 1px solid #c73eee; /* Граница кнопок */
+    border-radius: 5px; /* Скругление углов кнопок */
+    color: #bdc4dc;
+}
+
+.comment-list-posts-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment-post-content {
+    border: 2px solid #b022a5;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 550px;
+    margin: 10px;
+}

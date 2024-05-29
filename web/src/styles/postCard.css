@@ -1,0 +1,36 @@
+.post-card {
+    width: 400px;
+    padding-bottom: 10px;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    margin: 0 15px 15px 15px;
+
+    border: 1px solid #001C81FF; /* Граница кнопок */
+    border-radius: 5px; /* Скругление углов кнопок */
+    color: #6F889BFF;
+}
+
+.post-card img {
+    /* Устанавливаем максимальную ширину для изображений в карточке */
+    width: 400px; /* Изображение будет подстраиваться под размер карточки */
+    height: 225px; /* Поддерживаем пропорциональное изменение высоты */
+}
+
+.all-posts-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.like-dislike-btn {
+    margin: 7px;
+}
+
+.post-header-btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    opacity: 0.7; /* Changed opacity value */
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    border: none; /* Removed border */
+}

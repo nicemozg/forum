@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #fa00da; /* Граница кнопок */
+    border-radius: 5px; /* Скругление углов кнопок */
+    margin: 2px;
+    color: #dcdcdc;
+}
+
+.navbar-forum {
+    background-image: linear-gradient( 89.4deg,  rgba(194,0,39,1) 0.8%, rgba(10,35,104,1) 99.4% );!important;
+}
+
+.navbar-nav-forum {
+    color: #fd00e5 !important;
+}
+
+.user-name {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #013af8; /* Граница кнопок */
+    border-radius: 5px; /* Скругление углов кнопок */
+    margin: 2px;
+}
+
+.categories-box {
+    max-width: 550px;
+}
+
+.categories-header {
+    width: 300px;
+    padding: 3px; /* Отступы внутри кнопок */
+    background-color: whitesmoke; /* Цвет фона кнопок */
+    border: 1px solid #ccc; /* Граница кнопок */
+    border-radius: 5px; /* Скругление углов кнопок */
+    white-space: nowrap; /* Не переносить текст на новую строку */
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Не переносить на следующую строку */
+    overflow-x: auto; /* Горизонтальная прокрутка */
+    scroll-behavior: auto;
+    width: 100%; /* Растягиваем контейнер на всю ширину */
+}
+
+.category-button {
+    /*padding: 10px; !* Отступы внутри кнопок *!*/
+    margin-right: 10px; /* Отступ между кнопками */
+    /*background-color: #f0f0f0; !* Цвет фона кнопок *!*/
+    /*border: 1px solid #ccc; !* Граница кнопок *!*/
+    /*border-radius: 5px; !* Скругление углов кнопок *!*/
+    white-space: nowrap; /* Не переносить текст на новую строку */
+}
+
+.category-button:last-child {
+    margin-right: 0; /* Убираем отступ справа у последней кнопки */
+}

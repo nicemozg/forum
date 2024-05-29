@@ -1,0 +1,33 @@
+.btn-close-comment-post {
+    float: right;
+    margin-top: 2px;
+}
+
+.comment-posts-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment-card-detail{
+    width: 700px;
+    padding-bottom: 10px;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    margin: 15px;
+    border: 1px solid #001C81FF; /* Граница кнопок */
+    border-radius: 5px; /* Скругление углов кнопок */
+    color: #6F889BFF;
+}
+.comment-post-text {
+    min-height: 50px;
+    max-height: 100px;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.comment-div {
+    max-width: 500px;
+    padding: 10px;
+}
