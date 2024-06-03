@@ -6,16 +6,17 @@ import (
 	"forum/internal/models"
 	"net/http"
 	"net/url"
+	"os"
 	"strings"
 )
 
-const (
-	githubAuthURL      = "1"
-	githubTokenURL     = "2"
-	githubUserInfoURL  = "3"
-	githubClientID     = "4"
-	githubClientSecret = "5"
-	redirectGithubUrl  = "6"
+var (
+	githubAuthURL      = "https://github.com/login/oauth/authorize"
+	githubTokenURL     = "https://github.com/login/oauth/access_token"
+	githubUserInfoURL  = "https://api.github.com/user"
+	githubClientID     = os.Getenv("GITHUB_CLIENT_ID")
+	githubClientSecret = os.Getenv("GITHUB_CLIENT_SECRET")
+	redirectGithubUrl  = os.Getenv("REDIRECT_GITHUB_URL")
 )
 
 func (h *Handler) githubSignInRedirect(w http.ResponseWriter, r *http.Request) {
