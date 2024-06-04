@@ -52,15 +52,15 @@ go run main.go
 
 Для того чтобы сделать миграцию базы данных, необходимо выполнить команду:
 
-:one: Установить migrate 
+1. Установить migrate 
 ```bash
 go install -tags 'postgres sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
 ```
-:two: Создать файл конфигурации к примеру:
+2. Создать файл конфигурации к примеру:
 ```bash
 migrate create -ext sql -dir ./migrations -seq add_firstName_to_users_table
 ```
-:three: Комманды для миграций
+3. Комманды для миграций
   + Накатить для OS MAC migrate 
     ```bash
     -database sqlite3://$(pwd)/database/forum.db -path ./migrations up
