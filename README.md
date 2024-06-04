@@ -42,7 +42,9 @@
 
 Для того чтобы сделать миграцию базы данных, необходимо выполнить команду:
 
-* 1 Установить migrate `go install -tags 'postgres sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest`
+* 1 Установить migrate ```go
+go install -tags 'postgres sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+```
 * 2 Создать файл конфигурации к примеру `migrate create -ext sql -dir ./migrations -seq add_firstName_to_users_table`
 * 3 Применить миграцию для OS MAC migrate `-database sqlite3://$(pwd)/database/forum.db -path ./migrations up`
 * 4 Откатить миграцию для OS MAC migrate `-database sqlite3://$(pwd)/database/forum.db -path ./migrations down`
