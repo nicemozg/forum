@@ -49,3 +49,5 @@
 * 3-2 Применить миграцию для OS WINDOWS `migrate -database sqlite3://./database/forum.db -path ./migrations up`
 * 4-2 Откатить миграцию для OS WINDOWS `migrate -database sqlite3://./database/forum.db -path ./migrations down`
 
+![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
