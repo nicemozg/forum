@@ -42,6 +42,8 @@
 
 * 1 Установить migrate `go install -tags 'postgres sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest`
 * 2 Создать файл конфигурации к примеру `migrate create -ext sql -dir ./migrations -seq add_firstName_to_users_table`
-* 3 Применить миграцию `migrate -database sqlite3://$(pwd)/database/forum.db -path ./migrations up`
-* 4 Откатить миграцию `migrate -database sqlite3://$(pwd)/database/forum.db -path ./migrations down 1`
+* 3 Применить миграцию для OS MAC migrate `-database sqlite3://$(pwd)/database/forum.db -path ./migrations up`
+* 4 Откатить миграцию для OS MAC migrate `-database sqlite3://$(pwd)/database/forum.db -path ./migrations down`
+* 3-2 Применить миграцию для OS WINDOWS `migrate -database sqlite3://./database/forum.db -path ./migrations up`
+* 4-2 Откатить миграцию для OS WINDOWS `migrate -database sqlite3://./database/forum.db -path ./migrations down`
 
