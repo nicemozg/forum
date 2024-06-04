@@ -40,16 +40,45 @@
 5. S3 хранилище
 6. Docker
 
+### Команда для запуска:
+```go
+go run main.go
+```
+
 Для того чтобы сделать миграцию базы данных, необходимо выполнить команду:
 
-* 1 Установить migrate `go install -tags 'postgres sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest`
-* 2 Создать файл конфигурации к примеру `migrate create -ext sql -dir ./migrations -seq add_firstName_to_users_table`
-* 3 Применить миграцию для OS MAC migrate `-database sqlite3://$(pwd)/database/forum.db -path ./migrations up`
-* 4 Откатить миграцию для OS MAC migrate `-database sqlite3://$(pwd)/database/forum.db -path ./migrations down`
-* 3-2 Применить миграцию для OS WINDOWS `migrate -database sqlite3://./database/forum.db -path ./migrations up`
-* 4-2 Откатить миграцию для OS WINDOWS `migrate -database sqlite3://./database/forum.db -path ./migrations down`
+1. Установить migrate 
+```bash
+go install -tags 'postgres sqlite3' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+```
+2. Создать файл конфигурации к примеру:
+```bash
+migrate create -ext sql -dir ./migrations -seq add_firstName_to_users_table
+```
+3. Комманды для миграций
+  + Накатить для OS MAC migrate 
+    ```bash
+    -database sqlite3://$(pwd)/database/forum.db -path ./migrations up
+    ```
+  + Откатить для OS MAC migrate
+    ```bash
+    -database sqlite3://$(pwd)/database/forum.db -path ./migrations down
+    ```
+  + Накатить для OS WINDOWS
+    ```bash
+    migrate -database sqlite3://./database/forum.db -path ./migrations up
+    ```
+  + Откатить для OS WINDOWS
+    ```bash
+    migrate -database sqlite3://./database/forum.db -path ./migrations down
+    ```
 
-![Image alt](1.jpg)
-![Image alt](2.jpg)
-![Image alt](3.jpg)
-![Image alt](4.jpg)
+###     Contacts:
+
++ [Telegram](https://t.me/nicemozgg)
++ [WhatsApp](https://Wa.me/+77064441111)
+
+![Image alt](readmeFiles/1.jpg)
+![Image alt](readmeFiles/2.jpg)
+![Image alt](readmeFiles/3.jpg)
+![Image alt](readmeFiles/4.jpg)
