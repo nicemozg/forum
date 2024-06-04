@@ -45,6 +45,8 @@
 5. :white_check_mark: S3 хранилище
 6. :white_check_mark: Docker
 
+#### В корневой директорий создать файл `.env `
+
 ### Команда для запуска:
 ```go
 go run main.go
