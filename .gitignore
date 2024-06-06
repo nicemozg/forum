@@ -2,3 +2,4 @@
 database/forum.db
 .DS_Store
 .env
+app.log
